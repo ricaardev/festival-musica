@@ -1,0 +1,27 @@
+{
+  "name": "festivalmusica",
+  "version": "1.0.0",
+  "description": "Aprendiendo SASS y NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ricaardev/festival-musica.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "ricaardev @ricaardev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricaardev/festival-musica/issues"
+  },
+  "homepage": "https://github.com/ricaardev/festival-musica#readme",
+  "dependencies": {
+    "sass": "^1.75.0"
+  }
+}
