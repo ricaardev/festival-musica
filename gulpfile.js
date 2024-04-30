@@ -4,15 +4,16 @@ import gulpSass from 'gulp-sass'
 
 const sass = gulpSass(dartSass)
 
+
 export function css(done) {
 
-    src('src/scss/app.scss')
-        .pipe(sass())
-        .pipe(dest('build/css'))
+    src('src/scss/app.scss') //ubicamos el archivo 
+        .pipe(sass().on('error', sass.logError)) //aplicamos sass pero da un error, por eso le aplicamo un listner .on que loguea el error en la terminal
+        .pipe(dest('build/css')) // este es el destino del compilado
 
     done()
 }
 
 export function dev() {
-    watch('src/scss/app.scss', css)
+    watch('src/scss/**/*.scss', css)
 }
