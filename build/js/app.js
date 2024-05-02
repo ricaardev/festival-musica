@@ -28,7 +28,7 @@ function crearGaleria() {
 
         const imagen = document.createElement('IMG')
         imagen.src = `src/img/gallery/full/${i}.jpg`
-        imagen.art = 'Imagen Galería'
+        imagen.alt = 'Imagen Galería'
 
         // Event Handler
 
@@ -44,7 +44,7 @@ function mostrarImagen(i) {
 
     const imagen = document.createElement('IMG')
     imagen.src = `src/img/gallery/full/${i}.jpg`
-    imagen.art = 'Imagen Galería'
+    imagen.alt = 'Imagen Galería'
 
 
     // Generar Modal
